@@ -4,6 +4,7 @@
 
 use App\Models\BlogPost;
 use Faker\Generator as Faker;
+use Illuminate\Support\Str;
 
 $factory->define(BlogPost::class, function (Faker $faker) {
     $title = $faker->sentence(rand(3, 8), true);
