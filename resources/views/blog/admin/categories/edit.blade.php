@@ -14,7 +14,7 @@
                         <div class="alert alert-danger" role="alert">
                             <button type="button" class="" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">x</span>
-                                {{ $erors->first() }}
+                                {{ $errors->first() }}
                             </button>
                         </div>
                     </div>
