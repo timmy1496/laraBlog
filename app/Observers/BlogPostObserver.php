@@ -8,6 +8,15 @@ use Illuminate\Support\Str;
 class BlogPostObserver
 {
 
+    public function creating(BlogPost $blogPost)
+    {
+        $this->setPublishedAt($blogPost);
+
+        $this->setSlug($blogPost);
+
+
+    }
+
     public function updating(BlogPost $blogPost)
     {
 //        $test[] = $blogPost->isDirty();
