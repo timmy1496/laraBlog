@@ -59,7 +59,7 @@ class PostController extends BaseController
        $categoryList
            = $this->blogCategoryRepository->getForComboBox();
 
-       return view('blog.admin.categories.edit',
+       return view('blog.admin.posts.edit',
            compact('item', 'categoryList'));
     }
 
