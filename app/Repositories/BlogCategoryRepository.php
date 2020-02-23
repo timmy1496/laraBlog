@@ -49,6 +49,9 @@ class BlogCategoryRepository extends CoreRepository
         $result = $this
             ->startConditions()
             ->select($fields)
+            ->with([
+                'parentCategory:id,title',
+            ])
             ->paginate($perPage);
 
         return $result;
